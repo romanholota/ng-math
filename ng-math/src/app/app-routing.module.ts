@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './views/about/about.component';
 import { MathComponent } from './views/math/math.component';
 
 const routes: Routes = [
-  { path: '', component: MathComponent },
+  { path: 'exercise', component: MathComponent },
+  { path: 'about', component: AboutComponent },
 ];
 
 @NgModule({

@@ -7,13 +7,15 @@ import { MathComponent } from './views/math/math.component';
 import { ExerciseComponent } from './components/exercise/exercise.component';
 import { AnswerComponent } from './components/answer/answer.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './views/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MathComponent,
     ExerciseComponent,
-    AnswerComponent
+    AnswerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

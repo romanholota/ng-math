@@ -21,9 +21,10 @@ export class AnswerComponent implements OnInit {
 
   submitAnswer(): void {
     this.result = this.mathService.checkAnswer(this.userAnswer);
-    this.mathService.generateExercise();
     this.newResult.emit(this.result);
     this.userAnswer = '';
+
+    this.mathService.generateExercise();
     event?.preventDefault();
   }
 }
